@@ -22,5 +22,5 @@
 (defmethod balance ((stack grouping-stack) (balancer sink-balancer))
   (let ((items (nthcdr (buffer-size balancer) (stack-items stack))))
     (unless (null (cdr items))
-      (setf (car items) (make-instance 'item :content (apply #'group (mapcar #'content items)))
+      (setf (car items) (make-instance 'item :content (apply #'combine (mapcar #'content items)))
             (cdr items) NIL))))
