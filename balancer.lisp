@@ -9,8 +9,6 @@
 (defclass balancer ()
   ())
 
-(defgeneric balance (stack balancer))
-
 (defclass inactive-balancer (balancer)
   ())
 

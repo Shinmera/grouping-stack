@@ -11,7 +11,6 @@
   ;; balancer.lisp
   (:export
    #:balancer
-   #:balance
    #:inactive-balancer
    #:sink-balancer
    #:buffer-size)
@@ -30,6 +29,7 @@
    #:stack-items
    #:stack-count
    #:stack-balancer
+   #:balance
    #:make-grouping-stack
    #:stack-push
    #:stack-push-many

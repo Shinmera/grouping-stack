@@ -24,8 +24,9 @@
             (class-name (class-of (stack-balancer stack)))))
   stack)
 
-(defmethod balance ((stack grouping-stack) (balancer (eql T)))
-  (balance stack (stack-balancer stack)))
+(defgeneric balance (stack balancer)
+  (:method ((stack grouping-stack) (balancer (eql T)))
+    (balance stack (stack-balancer stack))))
 
 (defun make-grouping-stack (balancer &key initial-contents)
   (let ((stack (make-instance 'grouping-stack :balancer balancer)))

@@ -16,6 +16,6 @@
   :serial T
   :components ((:file "package")
                (:file "item")
-               (:file "balancer")
-               (:file "stack"))
+               (:file "stack")
+               (:file "balancer"))
   :depends-on ())
