@@ -11,7 +11,7 @@
   :license "Artistic"
   :author "Nicolas Hafner <shinmera@tymoon.eu>"
   :maintainer "Nicolas Hafner <shinmera@tymoon.eu>"
-  :description "A stack that groups past elements together."
+  :description "A stack implementation that allows automatic grouping and balancing of items for fast traversal."
   :homepage "https://github.com/Shinmera/SKEL"
   :serial T
   :components ((:file "package")
