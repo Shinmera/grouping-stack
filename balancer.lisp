@@ -24,3 +24,11 @@
     (unless (null (cdr items))
       (setf (car items) (make-instance 'item :content (apply #'combine (mapcar #'content items)))
             (cdr items) NIL))))
+
+(defclass grouping-balancer (balancer)
+  ((grouping-threshold :initarg :grouping-threshold :initform 2 :accessor grouping-threshold)
+   (group-size :initarg :group-size :initform 2 :accessor group-size)
+   (max-items :initarg :max-items :initform NIL :accessor max-items)))
+
+(defmethod balance ((stack grouping-stack) (balancer grouping-balancer))
+  )
