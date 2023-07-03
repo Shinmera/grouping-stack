@@ -1,9 +1,3 @@
-#|
- This file is a part of grouping-stack
- (c) 2014 Shirakumo http://tymoon.eu (shinmera@tymoon.eu)
- Author: Nicolas Hafner <shinmera@tymoon.eu>
-|#
-
 (in-package #:cl-user)
 (defpackage #:grouping-stack
   (:nicknames #:org.shirakumo.grouping-stack)
